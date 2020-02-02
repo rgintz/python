@@ -15,7 +15,8 @@ Created on Wed Jan  1 20:54:13 2020
 # - created_at : date de l'écriture du tweet
 # - retweet_count : nombre de retweet
 # - favorite_count : nombre de fav
-# in_reply_to_screen_name : alias du compte auquel il est répondu
+# - in_reply_to_screen_name : alias du compte auquel il est répondu
+# Il retourne les données dans un ficher au format CSV (sép : ";")
 # ********************************************************************
 
 # *********************** LIBRAIRIES UTILISEES ***********************
