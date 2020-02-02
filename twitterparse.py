@@ -21,8 +21,6 @@ Created on Wed Jan  1 20:54:13 2020
 # *********************** LIBRAIRIES UTILISEES ***********************
 import time
 from datetime import datetime, date, time
-import pandas as pd
-import altair as alt
 # ******************************************************************** 
 
 # ************************* FONCTIONS UTILES *************************
