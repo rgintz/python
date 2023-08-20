@@ -17,13 +17,12 @@ from matplotlib.ticker import MultipleLocator
 # ************************* données ********************************
 data_livres = "goodreads_library_export.csv"
 today = today = date.today()
-année = 2023
 # *******************************************************************
 
 arrondi = lambda x : x.floor('1d')
 semaine = lambda x: "S"+ (x[1:] if x.startswith('0') else x)
 
-def plot_target(target):
+def plot_target(target, année = today.year):
     # lecture du fichier créé par Goodreads
     df = pd.read_csv(data_livres, parse_dates=True)
     # transformation de 'Date Read' au format date
@@ -81,4 +80,4 @@ def plot_target(target):
     # sauvegarde de la figure
     fig.savefig("to target "+ str(année) +" "+ today.strftime("%d%m%y")+".svg")
     
-plot_target(100)
+plot_target(target = 100, année = 2023)
